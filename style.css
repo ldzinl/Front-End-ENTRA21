@@ -1,0 +1,228 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe Print',tahoma, Arial, sans-serif;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .sobre_imagem img{
+        border-radius: 1rem;
+        flex:1;
+    }
+    #logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    #titulo_contato{
+        font-size: 2rem;
+    }
+    .sobre{
+        margin: 0 4rem;
+    }
+    .sobre .sobre_conteudo{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contato{
+        margin: 4rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+
+    :root{
+        --cafe-escuro: #4b2e2e;
+        --creme: #f5ede1;
+        --laranja: #d98e04;
+        --texto: #2e2117;
+    }
+
+    body{
+        color: var(--texto);
+        background-color: var(--creme);
+    }
+    .menu p{
+        color: white;
+    }
+
+    .cabecalho{
+        background-color: var(--cafe-escuro);
+        padding: 1.5rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--creme);
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu_lista{
+        color: var(--creme);
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: end;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .menu_lista a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu_lista a:hover {
+        color: var(--laranja);
+    }
+
+    .hero {
+        background: linear-gradient(rgba(75,46, 46, 0.65), rgba(75,46,46,0.65)),
+        url('https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=1200&q=80');
+        background-position: center;
+        background-size: cover;
+        color:white;
+        text-align: center;
+        padding: 6rem 0;
+    }
+    #sobre_texto p, h2{
+        margin-bottom: 1rem;
+    }
+
+    .hero_texto{
+        font-size:1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .botao{
+        background-color: var(--laranja);
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0.8rem 1.6rem;
+        border-radius: 1.8rem;
+        text-decoration: none;
+        margin:1rem;
+    }
+
+    .hero_titulo{
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .container{
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .contato_bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+    .sobre{
+        padding: 4rem 0;
+    }
+    .cardapio{
+        background-color: white;
+        padding:5rem 0;
+    }
+    .cardapio_card{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    .cardapio .hero_titulo {
+        text-align: center;
+        height: 8rem;
+        margin-bottom: 3.5rem;
+        font-size: 2.5rem;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 13.75rem;
+        padding: 2rem 1.5rem;
+        max-width: 15rem;
+        background-color: var(--creme);
+        text-align: center;
+        margin-left: 4.8rem;
+        border-radius: 10px;
+        
+    }
+    .card_titulo{
+        color:var(--cafe-escuro);
+        margin: 0.5rem;
+    }
+    .card_descricao{
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+
+    }
+    .card_preco{
+        display: block;
+        font-weight: bold;
+        color: var(--laranja);
+    }
+
+    .rodape{
+        text-align: center;
+        padding: 1.5rem 0;
+        background-color: var(--cafe-escuro);
+    }
+    .rodape p{
+        color: white;
+    }
+    @media(max-width: 768px){
+        .menu{
+            flex-direction: column;
+            gap:1rem;
+        }
+        .menu_lista{
+            gap:1rem;
+        }
+        .hero_titulo{
+            font-size: 2rem;
+        }
+        .sobre_conteudo{
+            flex-direction: column;
+        }
+        #sobre_texto{
+            flex-direction: column;
+        }
+        #sobre_texto{
+
+        }
+        .cardapio_card{
+            flex-direction: column;
+        }
+        #contato_conteudo{
+            text-align: center;
+        }
+        .contato_bloco {
+            flex-direction: column;
+            text-align: center;
+    }
+    }
